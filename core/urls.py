@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from portal.views import home
+from portal.views import home , trigger_error
 
 urlpatterns = [
     path('admin/', admin.site.urls),
