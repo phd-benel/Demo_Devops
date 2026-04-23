@@ -1,4 +1,4 @@
-﻿asgiref==3.11.1
+asgiref==3.11.1
 certifi==2026.4.22
 Django==4.2.18
 sentry-sdk==2.58.0
