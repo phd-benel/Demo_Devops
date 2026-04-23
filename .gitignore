@@ -1,0 +1,6 @@
+.gitignore : À la racine du projet, créez un fichier .gitignore :
+__pycache__/
+*.py[cod]
+venv/
+db.sqlite3
+.env
