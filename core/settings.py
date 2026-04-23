@@ -27,6 +27,16 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['demo-devops-eight.vercel.app']
 
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
+sentry_sdk.init(
+    dsn="https://de81ed2857ebf8856fca39ebc4371a94@o4511270041550848.ingest.de.sentry.io/4511270059966544",  # Remplacez par le DSN copié depuis Sentry
+    integrations=[DjangoIntegration()],
+    traces_sample_rate=1.0,  # Ajustez le taux de collecte des traces
+    send_default_pii=True
+)
+
 
 # Application definition
 
